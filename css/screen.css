@@ -1,0 +1,115 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.button {
+    font-size: 2em;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sendClick {
+    border: 1px solid #822828;
+    background: #ffdcdc;
+}
+
+#sendOtherClick {
+    border: 1px solid #282882;
+    background: #d2e6ff;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.button:active {
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container {
+    height: 100vh;
+    background: #96c8ff;
+    width: 50%;
+    float: left;
+    display: inline-flex;
+}
+
+.container:first-of-type {
+    background: #ff9696;
+}
+
+.container > div {
+    margin: auto;
+    text-align: center;
+    max-width: 45vw;
+}
+
+.number {
+    font-size: 3em;
+    margin-top: 3vh;
+    word-wrap: break-word;
+}
+
+#notice {
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: fixed;
+    width: calc(100% - 1.4em);
+    top: 0;
+    left: 0;
+    padding: .7em;
+    background: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#closeNotice {
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: fixed;
+    right: .6em;
+    top: .6em;
+    width: 1.5em;
+    height: 1.5em;
+    background: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    z-index: 5;
+}
+
+#statBarRed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #ff0000;
+    height: .4em;
+}
+
+#statBarBlue {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #0000ff;
+    height: .4em;
+}
+
+@media screen and (max-device-width: 640px) {
+    .number {
+        font-size: 2em;
+    }
+}
